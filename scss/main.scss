@@ -1,0 +1,76 @@
+a {
+  color: red;
+  font-size: 15px;
+}
+nav {
+  p {
+    font-size: 20px;
+    color: #e30611;
+    margin: 0;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #001424;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.btn {
+  background: #dd0000;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.info {
+  padding: 90px 0 100px 0;
+  background-image: url("../img/hero_banner_image.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 318px 396px;
+
+  .info__h1 {
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: bold;
+    color: #001424;
+  }
+
+  .info__desciption {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  nav {
+    p {
+      display: none;
+    }
+  }
+
+  .info {
+    margin: 5px;
+    background-position: center bottom;
+    padding-bottom: 85%;
+    background-size: contain;
+    padding: 10px 0 230px 0;
+
+    .info__h1 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    .info__desciption {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+}
+@media (min-width: 1024px) and (max-width: 1368px) {
+  /* CSS-стили */
+}

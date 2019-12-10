@@ -310,6 +310,13 @@ nav {
 }
 
 
+.copyright {
+  background-color: #ADB0B3;
+  color: white;
+  padding: 9px 16px;
+}
+
+
 /* /footer */
 
 
@@ -398,6 +405,12 @@ nav {
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .copyright {
+    background-color: white;
+    color: #6E7782;
+  }
+  
 
 }
 

@@ -8,6 +8,9 @@ nav p {
   color: #e30611;
   margin: 0; }
 
+nav .btn {
+  height: 40px; }
+
 .navbar-light .navbar-nav .nav-link {
   color: #001424; }
 
@@ -17,8 +20,13 @@ nav p {
 .btn {
   background: #dd0000;
   border-radius: 5px;
-  color: #ffffff; }
+  color: white;
+  height: 48px; }
+  .btn:hover {
+    background-color: #C90000;
+    color: white; }
 
+/*  info  */
 .info {
   padding: 90px 0 100px 0;
   background-image: url("../img/hero_banner_image.png");
@@ -27,14 +35,125 @@ nav p {
   background-size: 318px 396px; }
   .info .info__h1 {
     font-size: 50px;
-    line-height: 55px;
     font-weight: bold;
     color: #001424; }
   .info .info__desciption {
     font-weight: 500;
-    font-size: 24px;
-    line-height: 32px; }
+    font-size: 24px; }
 
+/*  /info  */
+/*  services  */
+.services__h2,
+.popular__h2 {
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 50px; }
+
+.services__btn {
+  display: flex;
+  justify-content: center; }
+  .services__btn button {
+    background: white;
+    border: 1px solid #E2E5EB;
+    box-sizing: border-box;
+    border-radius: 16px;
+    margin: 6px;
+    color: #6E7782;
+    height: 36px; }
+    .services__btn button:hover {
+      background-color: #C90000;
+      color: white; }
+  .services__btn .services__active {
+    color: #E30611; }
+
+.services__cards,
+.popular__cards {
+  display: flex; }
+
+.services__card {
+  background: white;
+  border: 1px solid #E2E5EB;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 30px;
+  margin: 16px; }
+
+.services__btn-more {
+  background: #E2E5EB;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 216px; }
+
+.services__title {
+  font-size: 24px; }
+
+.services__text {
+  font-size: 16px;
+  line-height: 24px; }
+
+.services__digit {
+  font-size: 21px; }
+  .services__digit span {
+    font-size: 45px; }
+
+/*  /services  */
+/*  popular */
+.popular__h2 {
+  font-weight: bold;
+  font-size: 32px;
+  margin: 100px 0 50px; }
+
+.popular__card {
+  background: white;
+  border: 1px solid #E2E5EB;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 30px;
+  margin: 16px;
+  width: 50%; }
+
+.popular__title {
+  font-size: 24px; }
+
+.popular__text {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-around; }
+
+.popular__img {
+  max-height: 70px; }
+
+/*  /popular */
+/*  buy */
+.buy__title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center; }
+
+.buy__list img {
+  margin-right: 14px; }
+
+.buy__list li {
+  list-style-type: none; }
+
+.buy__card {
+  display: flex;
+  flex-direction: row; }
+
+.buy__image {
+  max-height: 439px; }
+
+.buy__item {
+  margin: 12px; }
+
+.buy__columns {
+  display: flex;
+  flex-direction: row; }
+
+/*  /buy */
+/*--- media ---*/
 @media (min-width: 320px) and (max-width: 768px) {
   nav p {
     display: none; }
@@ -50,9 +169,28 @@ nav p {
     .info .info__desciption {
       font-weight: 500;
       font-size: 16px;
-      line-height: 19px; } }
+      line-height: 19px; }
+  .services__btn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    .services__btn button:hover {
+      background-color: #C90000;
+      color: white; }
+  .services__cards {
+    min-width: 320px; }
+  .popular__cards {
+    flex-direction: column; }
+  .popular__card {
+    min-width: 320px; }
+  .popular__img {
+    max-height: 50px; }
+  .buy__image {
+    display: none; } }
 
 @media (min-width: 1024px) and (max-width: 1368px) {
   /* CSS-стили */ }
+
+/*--- /media ---*/
 
 /*# sourceMappingURL=main.css.map */

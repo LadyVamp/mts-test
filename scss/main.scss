@@ -1,5 +1,28 @@
 $dark-red: #C90000;
 $light-gray: #E2E5EB;
+$gray: #ADB0B3;
+
+// прижать футер к низу
+* {
+	margin: 0;
+	padding: 0;
+}
+html,
+body {
+	height: 100%;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.container {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+// /прижать футер к низу
 
 a {
   color: red;
@@ -24,6 +47,7 @@ nav {
 
 .navbar {
   margin-bottom: 0;
+  background-color: white !important;
 }
 
 .btn {
@@ -38,13 +62,25 @@ nav {
   }
 }
 
+
+.invisible {
+  display: none;
+}
+.visible {
+  display: block;
+}
+
+.btn-person {
+  border: none;
+}
+
+
 /*  info  */
 .info {
   padding: 90px 0 100px 0;
   background-image: url("../img/hero_banner_image.png");
   background-position: right bottom;
   background-repeat: no-repeat;
-  background-size: 318px 396px;
 
   .info__h1 {
     font-size: 50px;
@@ -173,6 +209,12 @@ nav {
 
 
 /*  buy */
+
+.buy {
+  .btn {
+    margin: 40px 0 60px;
+  }
+}
 .buy__title {
   font-weight: bold;
   font-size: 32px;
@@ -202,6 +244,73 @@ nav {
 
 
 /*  /buy */
+
+/* footer */
+.footer {
+  height: 393px;
+  background: $gray;
+  padding: 34px;
+
+  .footer__title, p {
+    color: white;
+  }
+}
+
+.footer__list {
+
+  li {
+    list-style-type: none;
+  }
+
+  h4 {
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+  }
+  a {
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: normal;
+
+    &:hover {
+      color: $dark-red;
+    }
+  }
+
+
+}
+
+.footer__menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__btn {
+  background: $gray;
+  border: none;
+  color: white;
+  height: 56px;
+}
+
+.open>.dropdown-menu {
+  display: block;
+  background: $gray;
+  color: white;
+  border: none;
+  box-shadow: none; 
+
+} 
+.dropdown-item {
+  color: white;
+  &:hover {
+    color: $dark-red;
+    background: $gray;
+  }
+}
+
+
+/* /footer */
 
 
 
@@ -265,6 +374,29 @@ nav {
 
   .buy__image {
     display: none;
+  }
+
+  .buy {
+    .btn {
+      margin: 30px 0 60px;
+    }
+  }
+
+  .btn {
+    height: 36px;
+  }
+
+  .footer {
+    padding: 12px;
+
+    h3 {
+      margin: 0;
+    }
+  }
+
+  .footer__menu {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
 }

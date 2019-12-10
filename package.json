@@ -4,7 +4,8 @@
   "description": "npm install <br> gulp watch <br>",
   "main": "index.js",
   "dependencies": {
-    "bootstrap": "^4.4.1"
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1"
   },
   "devDependencies": {
     "gulp": "^4.0.2",

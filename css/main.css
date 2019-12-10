@@ -1,4 +1,23 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+html,
+body {
+  height: 100%; }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; }
+
+.container {
+  flex: 1 0 auto; }
+
+.footer {
+  flex: 0 0 auto; }
+
 a {
   color: red;
   font-size: 15px; }
@@ -15,7 +34,8 @@ nav .btn {
   color: #001424; }
 
 .navbar {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  background-color: white !important; }
 
 .btn {
   background: #dd0000;
@@ -26,13 +46,21 @@ nav .btn {
     background-color: #C90000;
     color: white; }
 
+.invisible {
+  display: none; }
+
+.visible {
+  display: block; }
+
+.btn-person {
+  border: none; }
+
 /*  info  */
 .info {
   padding: 90px 0 100px 0;
   background-image: url("../img/hero_banner_image.png");
   background-position: right bottom;
-  background-repeat: no-repeat;
-  background-size: 318px 396px; }
+  background-repeat: no-repeat; }
   .info .info__h1 {
     font-size: 50px;
     font-weight: bold;
@@ -128,6 +156,9 @@ nav .btn {
 
 /*  /popular */
 /*  buy */
+.buy .btn {
+  margin: 40px 0 60px; }
+
 .buy__title {
   font-weight: bold;
   font-size: 32px;
@@ -149,6 +180,54 @@ nav .btn {
   flex-direction: row; }
 
 /*  /buy */
+/* footer */
+.footer {
+  height: 393px;
+  background: #ADB0B3;
+  padding: 34px; }
+  .footer .footer__title, .footer p {
+    color: white; }
+
+.footer__list li {
+  list-style-type: none; }
+
+.footer__list h4 {
+  font-size: 12px;
+  font-weight: 600;
+  color: white; }
+
+.footer__list a {
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: normal; }
+  .footer__list a:hover {
+    color: #C90000; }
+
+.footer__menu {
+  display: flex;
+  justify-content: space-around; }
+
+.footer__btn {
+  background: #ADB0B3;
+  border: none;
+  color: white;
+  height: 56px; }
+
+.open > .dropdown-menu {
+  display: block;
+  background: #ADB0B3;
+  color: white;
+  border: none;
+  box-shadow: none; }
+
+.dropdown-item {
+  color: white; }
+  .dropdown-item:hover {
+    color: #C90000;
+    background: #ADB0B3; }
+
+/* /footer */
 /*--- media ---*/
 @media (min-width: 320px) and (max-width: 768px) {
   nav p {
@@ -182,7 +261,18 @@ nav .btn {
   .popular__img {
     max-height: 50px; }
   .buy__image {
-    display: none; } }
+    display: none; }
+  .buy .btn {
+    margin: 30px 0 60px; }
+  .btn {
+    height: 36px; }
+  .footer {
+    padding: 12px; }
+    .footer h3 {
+      margin: 0; }
+  .footer__menu {
+    flex-direction: column;
+    align-items: flex-start; } }
 
 @media (min-width: 1024px) and (max-width: 1368px) {
   /* CSS-стили */ }

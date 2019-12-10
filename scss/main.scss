@@ -112,8 +112,10 @@ nav {
 .services__btn-more {
   background: $light-gray;
   border-radius: 5px;
+  border: none;
   font-size: 16px;
   width: 216px;
+  height: 36px;
 }
 
 
@@ -133,7 +135,6 @@ nav {
 
   font-size: 21px;
 }
-
 
 /*  /services  */
 
@@ -179,17 +180,6 @@ nav {
   text-align: center;
 }
 
-.buy__list {
-  img {
-    margin-right: 14px;
-    // height: 17px;
-  }
-
-  li {
-    list-style-type: none;
-  }
-}
-
 .buy__card {
   display: flex;
   flex-direction: row;
@@ -200,7 +190,9 @@ nav {
 }
 
 .buy__item {
-  margin: 12px;
+  img {
+    margin-right: 12px;
+  }
 }
 
 .buy__columns {
